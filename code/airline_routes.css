@@ -1,0 +1,28 @@
+/* Final project from Information Visualization: Programing with D3.js */
+/* Author: Apu Islam */
+/* Date: May 25, 2020 */
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	background-color: #2A5599;
+	color: #FFFFFF;
+	padding: 5px;
+}
+
+svg {
+	border-style: solid;
+	border-width: 1px;
+}
+
+.mainView {
+	display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+	.mainView {
+		display: block;
+	}
+}
