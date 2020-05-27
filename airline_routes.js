@@ -1,3 +1,7 @@
+/* Final project from Information Visualization: Programing with D3.js */
+/* Author: Apu Islam */
+/* Date: May 25, 2020 */
+
 // A global variable to store the data to be visualized
 let store = {}
 
