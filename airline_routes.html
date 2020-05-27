@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="application-name" content="Airlines Routes Visualization">
+		<meta name="description" content="A web application to interactively visualize airlines routes using d3.js">
+		<meta name="author" content="Apu Islam">
+		<meta name="keywords" content="HTML,CSS,JavaScript, D3, airlines, routes, visualization">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Airlines Routes Visualization</title>
+		
+		<link href="airline_routes.css" rel="stylesheet" type"text/css">
+		
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="airline_routes.js"></script>
+		
+	</head>
+
+	<body>
+		<h1>Airlines Routes</h1>
+		<div class="outerDiv">
+		<div class="mainView">
+			<div>
+				<h2>Airlines</h2>
+				<svg id="AirlinesChart"></svg>
+			</div>
+			<div>
+				<h2>Airports</h2>
+				<svg id="Map"></svg>
+			</div>
+		</div>
+		</div>
+	</body>
+	
+	<script>
+		loadData().then(d => showData("#AirlinesChart", "#Map"))
+	</script>
+
+</html>
